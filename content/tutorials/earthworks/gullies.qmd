@@ -196,7 +196,6 @@ to scale it vertically so that the mountains are not too high.
 ```{bash}
 r.surf.fractal output=fractal seed=1
 r.mapcalc expression="fractal = fractal / 10" --overwrite
-r.stream.extract elevation=fractal accumulation=accumulation threshold=1000 stream_vector=streams
 ```
 
 ## Python

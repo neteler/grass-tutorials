@@ -272,7 +272,7 @@ would be overtopped by a meter of surge.
 ## Command line
 
 ```{bash}
-r.lake elevation=elevation water_level=1 lake=flooding coordinates=1109000,102750
+r.lake elevation=elevation water_level=1 lake=flooding coordinates=1109000,102750 --overwrite
 d.shade shade=relief color=elevation brighten=36
 d.rast map=flooding
 d.legend raster=flooding digits=1 color=white at=5,95,1,3
@@ -614,7 +614,7 @@ would be not overtopped by a meter of surge.
 ## Command line
 
 ```{bash}
-r.lake elevation=earthworks water_level=1 lake=flooding coordinates=1109000,102750
+r.lake elevation=earthworks water_level=1 lake=flooding coordinates=1109000,102750 --overwrite
 d.shade shade=relief color=earthworks brighten=36
 d.rast map=flooding
 d.legend raster=flooding digits=1 color=white at=5,95,1,3
