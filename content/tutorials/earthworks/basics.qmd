@@ -6,6 +6,7 @@ date-modified: today
 categories: [earthworks, terrain, raster, beginner]
 description: Learn the basics of terrain modeling with r.earthworks.
 image: images/basics_05.webp
+bibliography: earthworks.bib
 links:
   r_earthworks: "[r.earthworks](https://grass.osgeo.org/grass-stable/manuals/addons/r.earthworks.html)"
   wxgui_rdigit: "[raster digitizer](https://grass.osgeo.org/grass-stable/manuals/wxGUI.rdigit.html)"
@@ -37,7 +38,8 @@ jupyter: python3
 ![Random earthworks](images/basics_05.webp)
 
 Learn the basics of terrain modeling with 
-{{< meta links.r_earthworks >}}.
+{{< meta links.r_earthworks >}}
+[@Harmon:2026].
 This tool uses cut and fill operations to transform topography. 
 Cut operations subtract from a topographic surface, 
 while fill operations add to the topography. 

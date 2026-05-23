@@ -5,9 +5,8 @@ date: 2025-07-18
 date-modified: today
 categories: [noise, terrain, raster, map algebra, python, intermediate]
 description: Learn how to generate procedural noise using Python scripting in GRASS.
-image: images/noise_01.webp
+image: images/noise_05.webp
 bibliography: noise.bib
-csl: acm.csl
 links:
   notebooks: "[Get started with GRASS & Python in Jupyter Notebooks](https://grass-tutorials.osgeo.org/content/tutorials/get_started/fast_track_grass_and_python.html)"
   g_region: "[g.region](https://grass.osgeo.org/grass-stable/manuals/g.region.html)"

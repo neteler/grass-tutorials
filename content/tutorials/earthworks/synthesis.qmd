@@ -6,6 +6,7 @@ date-modified: today
 categories: [earthworks, terrain, raster, intermediate]
 description: Learn how to synthesize terrain with r.earthworks.
 image: images/synthesis_07.webp
+bibliography: earthworks.bib
 links:
   g_extension: "[g.extension](https://grass.osgeo.org/grass-stable/manuals/g.extension.html)"
   r_earthworks: "[r.earthworks](https://grass.osgeo.org/grass-stable/manuals/addons/r.earthworks.html)"
@@ -37,15 +38,14 @@ jupyter: python3
 ![Volumetric change during terrain synthesis](images/synthesis_07.webp)
 
 Learn how to synthesize terrain with 
-{{< meta links.r_earthworks >}}.
+{{< meta links.r_earthworks >}}
+[@Harmon:2026].
 In terrain synthesis, 
 landforms from one terrain are applied to another, 
 creating a hybrid landscape.
 This technique is used in computer graphics to model landscapes 
 that are challenging to create with procedural noise and erosion simulations
-([Zhou et al. 2007](https://doi.org/10.1109/TVCG.2007.1027),
-[Tasse et al. 2012](https://doi.org/10.1111/j.1467-8659.2012.03076.x),
-[Gain et al. 2015](https://doi.org/10.1111/cgf.12545)).
+[@Zhou:2007; @Tasse:2012; @Gain:2015].
 Landforms that are hard to model, for example, 
 can be sampled from real terrain 
 and grafted onto synthetic terrain.

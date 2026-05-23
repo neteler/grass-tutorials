@@ -6,6 +6,7 @@ date-modified: today
 categories: [earthworks, terrain, coast, raster, beginner]
 description: Model levees and alluvial ridges with r.earthworks.
 image: images/levees_08.webp
+bibliography: earthworks.bib
 links:
   r_earthworks: "[r.earthworks](https://grass.osgeo.org/grass-stable/manuals/addons/r.earthworks.html)"
   g_extension: "[g.extension](https://grass.osgeo.org/grass-stable/manuals/g.extension.html)"
@@ -36,8 +37,10 @@ jupyter: python3
 ![Levee improvement & ridge restoration](images/levees_08.webp)
 
 Learn the how to model levees and ridges with 
-{{< meta links.r_earthworks >}}.
-Download the [Bayou L'Ours Dataset](https://doi.org/10.5281/zenodo.15870441).
+{{< meta links.r_earthworks >}}
+[@Harmon:2026].
+Download the [Bayou L'Ours Dataset](https://doi.org/10.5281/zenodo.15870441)
+[@Harmon:2025].
 The coordinate reference system for this project is
 Louisiana State Plane South in meters.
 We will model two of the coastal infrastructure projects 
@@ -540,7 +543,7 @@ and `flat` to 10.
 The radius of flats should be 
 set to the region resolution
 to ensure that the gaps are fully closed
-because we test our design with a flood simulation.
+because we will test our design with a flood simulation.
 To better visualize the results, 
 use {{< meta links.r_relief >}} 
 and {{< meta links.d_shade >}} 
@@ -602,7 +605,7 @@ m.save("images/levees_08.webp")
 
 # Flood Simulation
 
-Test proposed coastal infrastructure with simulated storm surge.
+Test the proposed coastal infrastructure with simulated storm surge.
 Use {{< meta links.r_lake >}} 
 to model inundation from storm surge over the earthworks raster.
 Set the water level to one meter and the coordinates to `1109000, 102750`.

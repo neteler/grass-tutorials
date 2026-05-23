@@ -63,6 +63,7 @@ format:
     toc: true
     toc-title: Table of Contents
     link-external-newwindow: true
+    csl: acm.csl
 
 brand: brand/_brand.yml
 profile:

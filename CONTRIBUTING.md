@@ -123,6 +123,50 @@ You can either specify it in the YAML header (`image: image.webp`) or add `{.pre
 ![Slope map](slope.webp){.preview-image}
 ```
 
+## References
+
+To cite references, 
+you should create a bibtex file with bibliographic entries,
+reference the bibliography in your tutorial's frontmatter,
+and then add inline citations in Markdown format in the body of the text.
+A list of works cited will be automatically generated at the end of your tutorial.
+This project is configured to use the acm.csl citation style in its root directory. 
+
+Save a bibtex file in your tutorial directory:
+
+```bibtex
+@software{GRASS:2025,
+title = {{GRASS}},
+author = {{GRASS Development Team}},
+organization = {Open Source Geospatial Foundation},
+doi = {10.5281/zenodo.5176030},
+license = {GPL-2.0-or-later},
+month = {11},
+url = {https://github.com/OSGeo/grass},
+version = {8.4.2},
+year = {2025}
+}
+```
+
+Reference your bibtex file
+in your tutorial's YAML frontmatter:
+
+```yaml
+bibliography: tutorial.bib
+```
+
+In your tutorial, 
+add citations in Markdown with `[@citation]`.
+This will create an inline citation
+and automatically generate
+a list of works cited
+in a reference section
+at the end of the tutorial.
+
+```markdown
+[@GRASS:2025]
+```
+
 ## External tutorials
 
 If you want to have your GRASS external tutorials listed, you can create a `.yml` file
@@ -165,7 +209,7 @@ Check your markdown with a [linter](https://dlaa.me/markdownlint/) and fix as ma
 Follow the [GitHub guide](https://grass.osgeo.org/grass-devel/manuals/github_guide.html)
 (adapt it to this repo) to submit your tutorial.
 You should **only commit the .qmd file and images**. 
-Once you sumbmit a PR, the CI pipeline will build your
+Once you submit a PR, the CI pipeline will build your
 tutorial, so you and a reviewer can check if everything is ok.
 When a reviewer approves, your PR will be merged soon.
 

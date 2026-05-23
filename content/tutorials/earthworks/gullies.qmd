@@ -6,6 +6,7 @@ date-modified: today
 categories: [earthworks, terrain, raster, beginner]
 description: Model gullies using relative cut operations with r.earthworks.
 image: images/gullies_03.webp
+bibliography: earthworks.bib
 links:
   r_earthworks: "[r.earthworks](https://grass.osgeo.org/grass-stable/manuals/addons/r.earthworks.html)"
   r_sim_terrain: "[r.sim.terrain](https://grass.osgeo.org/grass-stable/manuals/addons/r.sim.terrain.html)"
@@ -38,7 +39,8 @@ jupyter: python3
 
 Learn the how to model gullies
 using relative cut operations with 
-{{< meta links.r_earthworks >}}.
+{{< meta links.r_earthworks >}}
+[@Harmon:2026].
 This tutorial introduces 
 more features of {{< meta links.r_earthworks >}}
 including vector line input,
@@ -74,7 +76,7 @@ This tutorial covers:
 
 For a simulation based approach to modeling gullies,
 try the landscape evolution model 
-{{< meta links.r_sim_terrain >}} instead. 
+{{< meta links.r_sim_terrain >}} [@Harmon:2019] instead. 
 
 ::: {.callout-note title="Computational notebook"}
 This tutorial can be run as a 
